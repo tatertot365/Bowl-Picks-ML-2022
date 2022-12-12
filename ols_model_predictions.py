@@ -1,4 +1,5 @@
 from OLS_model import model
+import pandas as pd
 import numpy as np
 
 predict = np.poly1d(model)
@@ -56,4 +57,13 @@ for points in point_diff_array:
     else:
         win_loss_array.append('L')
         print(f'Home team loses by {abs(points)} points')
-print(win_loss_array)
+
+teams_df = pd.read_csv('teams_df.csv')
+game_array = []
+unique_teams = teams_df['team_name'].unique()
+
+for i in range(0, len(unique_teams), 2):
+    game_array.append(unique_teams[i] + ' vs ' + unique_teams[i+1])
+
+pred_df = pd.DataFrame(data={'Games':game_array, 'Predicted Winnter OLS':win_loss_array})
+pred_df.to_csv('predictions.csv', index=False)
