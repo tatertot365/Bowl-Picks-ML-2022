@@ -8,7 +8,7 @@ for row in teams_stats_df.itertuples():
 
     if row.team_name == row.home_team:
         point_diff = row.home_points - row.away_points
-        elo_diff = row.home_pregame_elo - row.home_postgame_elo
+        elo_diff = row.home_pregame_elo - row.away_pregame_elo
 
         teams_stats_df.at[row.Index, 'elo_diff'] = elo_diff
         teams_stats_df.at[row.Index, 'point_diff'] = point_diff
@@ -21,7 +21,7 @@ for row in teams_stats_df.itertuples():
 
     elif row.team_name == row.away_team:
         point_diff = row.away_points - row.home_points
-        elo_diff = row.away_pregame_elo - row.away_postgame_elo
+        elo_diff = row.away_pregame_elo - row.home_pregame_elo
 
         teams_stats_df.at[row.Index, 'elo_diff'] = elo_diff
         teams_stats_df.at[row.Index, 'point_diff'] = point_diff
