@@ -1,43 +1,43 @@
-Games,Predicted Winnter OLS
-Miami (OH) vs UAB,L
-UT San Antonio vs Troy,W
-Cincinnati vs Louisville,W
-Jackson State vs North Carolina Central,W
-Florida vs Oregon State,L
-Washington State vs Fresno State,L
-Rice vs Southern Mississippi,L
-SMU vs BYU,W
-North Texas vs Boise State,L
-Marshall vs Connecticut,W
-Eastern Michigan vs San José State,L
-Liberty vs Toledo,L
-Western Kentucky vs South Alabama,W
-Baylor vs Air Force,W
-Louisiana vs Houston,W
-Wake Forest vs Missouri,W
-Middle Tennessee vs San Diego State,L
-New Mexico State vs Bowling Green,W
-Georgia Southern vs Buffalo,W
-Memphis vs Utah State,W
-Coastal Carolina vs East Carolina,W
-Wisconsin vs Oklahoma State,W
-UCF vs Duke,W
-Kansas vs Arkansas,L
-North Carolina vs Oregon,L
-Texas Tech vs Ole Miss,L
-Syracuse vs Minnesota,L
-Oklahoma vs Florida State,L
-Texas vs Washington,W
-Maryland vs NC State,W
-Pittsburgh vs UCLA,W
-Notre Dame vs South Carolina,W
-Ohio vs Wyoming,W
-Tennessee vs Clemson,W
-Alabama vs Kansas State,W
-Iowa vs Kentucky,W
-TCU vs Michigan,L
-Ohio State vs Georgia,W
-Mississippi State vs Illinois,L
-Tulane vs USC,L
-LSU vs Purdue,W
-Penn State vs Utah,W
+Games,Predicted Winnter OLS,predictions_decision_tree
+Miami (OH) vs UAB,L,W
+UT San Antonio vs Troy,W,W
+Cincinnati vs Louisville,W,W
+Jackson State vs North Carolina Central,W,W
+Florida vs Oregon State,L,L
+Washington State vs Fresno State,L,L
+Rice vs Southern Mississippi,L,W
+SMU vs BYU,W,W
+North Texas vs Boise State,L,W
+Marshall vs Connecticut,W,W
+Eastern Michigan vs San José State,L,W
+Liberty vs Toledo,L,W
+Western Kentucky vs South Alabama,W,L
+Baylor vs Air Force,W,L
+Louisiana vs Houston,W,L
+Wake Forest vs Missouri,W,L
+Middle Tennessee vs San Diego State,L,W
+New Mexico State vs Bowling Green,W,L
+Georgia Southern vs Buffalo,W,L
+Memphis vs Utah State,W,W
+Coastal Carolina vs East Carolina,W,L
+Wisconsin vs Oklahoma State,W,W
+UCF vs Duke,W,L
+Kansas vs Arkansas,L,W
+North Carolina vs Oregon,L,W
+Texas Tech vs Ole Miss,L,W
+Syracuse vs Minnesota,L,W
+Oklahoma vs Florida State,L,L
+Texas vs Washington,W,W
+Maryland vs NC State,W,W
+Pittsburgh vs UCLA,W,L
+Notre Dame vs South Carolina,W,L
+Ohio vs Wyoming,W,L
+Tennessee vs Clemson,W,W
+Alabama vs Kansas State,W,W
+Iowa vs Kentucky,W,W
+TCU vs Michigan,L,L
+Ohio State vs Georgia,W,L
+Mississippi State vs Illinois,L,W
+Tulane vs USC,L,W
+LSU vs Purdue,W,L
+Penn State vs Utah,W,W

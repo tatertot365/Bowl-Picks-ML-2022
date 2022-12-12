@@ -1,4 +1,5 @@
 from OLS_model import model
+from decision_tree_pred import predictions_decision_tree
 import pandas as pd
 import numpy as np
 
@@ -65,5 +66,5 @@ unique_teams = teams_df['team_name'].unique()
 for i in range(0, len(unique_teams), 2):
     game_array.append(unique_teams[i] + ' vs ' + unique_teams[i+1])
 
-pred_df = pd.DataFrame(data={'Games':game_array, 'Predicted Winnter OLS':win_loss_array})
+pred_df = pd.DataFrame(data={'Games':game_array, 'Predicted Winnter OLS':win_loss_array, 'predictions_decision_tree':predictions_decision_tree})
 pred_df.to_csv('predictions.csv', index=False)
