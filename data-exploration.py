@@ -8,6 +8,9 @@ import statsmodels
 
 df = pd.read_csv('teams_col_add.csv')
 df = df.drop(columns=['Unnamed: 0', 'Unnamed: 0.1'])
+df = df.dropna()
+
+print(df.columns)
 # print(df.isnull().sum())
 
 home_team_df = df[df['home/away'] == 'Home']
@@ -20,4 +23,4 @@ away_team_df = df[df['home/away'] == 'Away']
 
 # print(df.describe())
 
-# proj.calculateBivariantStatsViz(df, 'elo_diff')
+# proj.assumptions(df, 'point_diff')

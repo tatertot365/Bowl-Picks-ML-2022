@@ -19,6 +19,8 @@ for col in df:
 y = df['win/loss']
 X = df.drop(columns=['win/loss', 'win/loss_L', 'win/loss_W'])
 X = X.select_dtypes(include=np.number)
+y = y.values
+X = X.values
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=12345)
 
@@ -49,7 +51,7 @@ print("precision2: " + str(round(precision2, 4)))
 recall2 = tp/(tp+fn)
 print("recall2: " + str(round(recall2, 4))) 
 
-# F1        = (2 * (precision * recall) / (precision + recall))
+# F1 = (2 * (precision * recall) / (precision + recall))
 f12 = (2 * (precision2 * recall2) / (precision2 + recall2))
 print("f12: " + str(round(f12, 4))) 
 
